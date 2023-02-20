@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="cart.css">
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+	<link rel="icon" href="https://sebastiansicecream.com/wp-content/uploads/2018/08/cropped-Sebastians-Favicon-32x32.png" sizes="32x32" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+	<title>Sebastian-Carts</title>
+</head>
+<body>
+
+	<div class="maincontainer">
+
+		<!-- Navigation Bar -->
+		<div class="navbar">
+			<!-- logo -->
+			<div class="logo">
+				<img src="./product/logo.png">
+			</div>
+			<!-- navlinks -->
+			<div class="navlinks" id="navlinks">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="">Product</a></li>
+					<li><a href="">Latest Scoop</a></li>
+					<li><a href="">Faqs</a></li>
+					<li><a href="">Contact Us</a></li>
+					<li onclick="addCart()" id="active"><ion-icon name="cart"></ion-icon></li>
+				</ul>
+			</div>
+			<div class="menu"  onclick="openMenu()">
+				<ion-icon name = "menu"></ion-icon>
+			</div>
+		</div>
+
+		<!-- banner -->
+		<div class="banner">
+			<div class="overlay"></div>
+			<div class="banner-content">
+				<h1>SEASONAL FLAVORS</h1>
+				<p>All Product from 'Seasonal Flavor's category</p>
+			</div>
+		</div>
+
+		<!-- searchbar -->
+		<div class="searchbar">
+			<div class="searchbar-content">
+				<input type="text" name="" placeholder="Search flavor here..."><ion-icon name="search-sharp"></ion-icon>
+			</div>
+		</div>
+
+
+
+		<div class="label">
+			<label>My Cart</label>
+		</div>
+		<div class="cart-cont" id="cart-cont">
+			<div class="cartItems" id="cartItems">
+				<ul>
+					<!-- <li></li> -->
+				</ul>
+			</div>
+		</div>
+
+		<div class="total-cont">
+			<div class="subtotal-cont">
+				<div class="subtotal">
+					<label>Subtotal: </label>
+					<label id="total">0</label>
+				</div>
+
+				<div class="checkoutBtn">
+					<button>Checkout</button>
+				</div>
+			</div>
+		</div>
+
+
+</body>
+
+<!-- script total -->
+<script src="main-main.js"></script>
+<script type="text/javascript">
+		showCart();
+</script>
+
+
+<script type="text/javascript">
+	
+// function loadCart() {
+//   let storedCartItems = localStorage.getItem('cartItems');
+//   if (storedCartItems) {
+//     cartItems = JSON.parse(storedCartItems);
+//     let cartItemsEl = document.querySelector("#cartItems");
+//     for (let i = 0; i < cartItems.length; i++) {
+//       let item = cartItems[i];
+//       let div = `<a href="cart.html"><img src="${item.img}"></a><small>${item.details}</small><span>${item.price}</span>`;
+//       let taskitem = document.createElement("li");
+//       taskitem.innerHTML = div;
+//       cartItemsEl.appendChild(taskitem);
+//     }
+//   }
+// }
+
+// loadCart();
+
+
+
+
+	// =========================================================
+
+
+</script>
+
+<!-- icon -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>

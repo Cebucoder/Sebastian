@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<body>
+	
+	</body>
+
+	<script type="text/javascript">
+		window.onbeforeunload = function() {
+			
+		   localStorage.setItem(name, $('#inputName').val());
+		   localStorage.setItem(phone, $('#inputPhone').val());
+		   localStorage.setItem(subject, $('#inputAddress').val());
+		}
+
+		window.onload = function() {
+		   var name = localStorage.getItem(name);
+		   var phone = localStorage.getItem(phone);
+		   if (name !== null) $('#inputName').val(name); if (phone !== null) $('#inputPhone').val(phone);
+		   // ...
+		}
+	</script>
+
+	</html>	

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="https://sebastiansicecream.com/wp-content/uploads/2018/08/cropped-Sebastians-Favicon-32x32.png" sizes="32x32" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+
+	<title>Sebastian</title>
+</head>
+<body>
+
+	<div class="maincontainer">
+
+		<!-- Navigation Bar -->
+		<div class="navbar">
+			<!-- logo -->
+			<div class="logo">
+				<img src="./product/logo.png">
+			</div>
+			<!-- navlinks -->
+			<div class="navlinks" id="navlinks">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Product</a></li>
+					<li><a href="">Latest Scoop</a></li>
+					<li><a href="">Faqs</a></li>
+					<li><a href="">Contact Us</a></li>
+					<li onmouseover="addCart()" id="active"><a href="cart.html" target="blank"><ion-icon name="cart"></ion-icon></a></li>
+				</ul>
+			</div>
+
+			<div class="menu"  onclick="openMenu()">
+				<ion-icon name = "menu"></ion-icon>
+			</div>
+
+		</div>
+
+		<!-- cart container -->
+		<!-- <div class="cartoverlay"></div> -->
+
+		<div class="cart-cont" id="cart-cont">
+			<div class="cartItems" id="cartItems">
+				<ul>
+					<!-- <li></li> -->
+				</ul>
+			</div>
+		</div>
+
+		<!-- banner -->
+		<div class="banner">
+			<div class="overlay"></div>
+			<div class="banner-content">
+				<h1>SEASONAL FLAVORS</h1>
+				<p>All Product from 'Seasonal Flavor's category</p>
+			</div>
+		</div>
+
+		<!-- searchbar -->
+		<div class="searchbar">
+			<div class="searchbar-content">
+				<input type="text" name="" placeholder="Search flavor here..."><ion-icon name="search-sharp"></ion-icon>
+			</div>
+		</div>
+
+		<!-- Product container -->
+		<div class="prod-cont">
+
+			<!-- product 1 -->
+			<div class="product">
+				<!-- price -->
+				<div class="price">
+					<h1 id = "price">₱ 400</h1>
+				</div>
+				<div class="product-img" >
+					<img src="./product/prod1.jpg" id="product1">
+				</div>
+				<div class="product-details">
+					<h4>VALENTINE COLLECTION 2023</h4>
+					<p  id="details">UNRESOLVED ISSUES</p>
+
+					<button onclick="addToCart('./product/prod1.jpg','UNRESOLVED ISSUES', 400)">Add to Cart</button>
+				</div>
+			</div>
+
+			<!-- product 2 -->
+			<div class="product">
+				<!-- price -->
+				<div class="price">
+					<h1 id="price2">₱ 420</h1>
+				</div>
+				<div class="product-img">
+					<img src="./product/prod2.jpg" id="product2">
+				</div>
+				<div class="product-details">
+					<h4>VALENTINE COLLECTION 2023</h4>
+					<p id="details2">CLOSURE</p>
+
+					<button onclick="addToCart('./product/prod2.jpg','CLOSURE',420)">Add to Cart</button>
+				</div>
+			</div>
+
+			<!-- product 3 -->
+			<div class="product">
+				<!-- price -->
+				<div class="price">
+					<h1 id="price3">₱ 390</h1>
+				</div>
+				<div class="product-img">
+					<img src="./product/prod3.jpg" id="product3">
+				</div>
+				<div class="product-details">
+					<h4>VALENTINE COLLECTION 2023</h4>
+					<p id="details3">MATINONG BF</p>
+
+					<button onclick="addToCart('./product/prod3.jpg','MATINONG BF',390)">Add to Cart</button>
+				</div>
+			</div>
+
+			<!-- product 4 -->
+			<div class="product">
+				<!-- price -->
+				<div class="price">
+					<h1 id="price4">₱ 350</h1>
+				</div>
+				<div class="product-img">
+					<img src="./product/prod4.jpg" id="product4">
+				</div>
+				<div class="product-details">
+					<h4>VALENTINE COLLECTION 2023</h4>
+					<p id="details4">MATINONG GF</p>
+
+					<button onclick="addToCart('./product/prod4.jpg','MATINONG GF',350)">Add to Cart</button>
+				</div>
+			</div>
+
+			<!-- product 5 -->
+			<div class="product">
+				<!-- price -->
+				<div class="price">
+					<h1 id="price4">₱ 435</h1>
+				</div>
+				<div class="product-img">
+					<img src="./product/prod5.jpg" id="product4">
+				</div>
+				<div class="product-details">
+					<h4>VALENTINE COLLECTION 2023</h4>
+					<p id="details4">BUTTER PECAN</p>
+
+					<button onclick="addToCart('./product/prod5.jpg','BUTTER PECAN',435)">Add to Cart</button>
+				</div>
+			</div>
+
+			<!-- product 6 -->
+			<div class="product">
+				<!-- price -->
+				<div class="price">
+					<h1 id="price4">₱ 350</h1>
+				</div>
+				<div class="product-img">
+					<img src="./product/prod6.jpg" id="product4">
+				</div>
+				<div class="product-details">
+					<h4>VALENTINE COLLECTION 2023</h4>
+					<p id="details4">LECHE FLAN CON</p>
+
+					<button onclick="addToCart('./product/prod6.jpg','LECHE FLAN CON',350)">Add to Cart</button>
+				</div>
+			</div>
+
+			<!-- product 7 -->
+			<div class="product">
+				<!-- price -->
+				<div class="price">
+					<h1 id="price4">₱ 405</h1>
+				</div>
+				<div class="product-img">
+					<img src="./product/prod7.jpg" id="product4">
+				</div>
+				<div class="product-details">
+					<h4>VALENTINE COLLECTION 2023</h4>
+					<p id="details4">MANGGA</p>
+
+					<button onclick="addToCart('./product/prod7.jpg','MANGGA',405)">Add to Cart</button>
+				</div>
+			</div>
+
+			<!-- product 8 -->
+			<div class="product">
+				<!-- price -->
+				<div class="price">
+					<h1 id="price4">₱ 405</h1>
+				</div>
+				<div class="product-img">
+					<img src="./product/prod8.jpg" id="product4">
+				</div>
+				<div class="product-details">
+					<h4>VALENTINE COLLECTION 2023</h4>
+					<p id="details4">UBE CHAMPORADO</p>
+
+					<button onclick="addToCart('./product/prod8.jpg','UBE CHAMPORADO',405)">Add to Cart</button>
+				</div>
+			</div>
+
+
+
+		</div>
+		
+	</div>
+
+	<footer>
+
+		<h5>All Right Reserved 2023 Created With Love By : cebucoder</h5>
+		<label>Credit goes to the rightful owner of the picture and logo that I used on my website, <a href="https://sebastiansicecream.com/">Sebastian's Ice Cream.</a></label>
+		
+	</footer>
+
+</body>
+<!-- <script src="main.js"></script> -->
+<!-- <script src="app.js"></script> -->
+<script src="main-main.js"></script>
+
+<!-- icon -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>
